@@ -126,13 +126,13 @@ body.browser-source.clock{
 		}
 
 		#lower-third .left-block{
-		border-right:1px solid #333;
+		# Removed border-right:1px solid #333;
 		padding-right:.5em;
 		margin-right:.5em
 		}
 
 		#lower-third .left-block img{
-		height:5em
+		height:7em
 		}
 
 
