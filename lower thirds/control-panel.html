@@ -19,14 +19,14 @@
                 <input type="radio" name="radio-group-position" id="position-right" /><label for="position-right">Right</label>
            </div>
 		   <div style="clear:both"></div>
-		   
-		
+
+
 </div>
 	</div>
 	<div class="panel-bottom">
 		<h3>Lower thirds list</h3>
 		<ul id="predefined">
-			<li><div class="name">Lexi Weber</div><div class="function">Accountant</div></li>
+			<li><div class="name">Aaron Lee Taggert</div><div class="function">PRP</div></li>
 			<li><div class="name">Chad Funk</div><div class="function">Actor</div></li>
 			<li><div class="name">Dorris Baumbach</div><div class="function">Air traffic controller</div></li>
 			<li><div class="name">Mateo Gleason</div><div class="function">Physician's assistant</div></li>
@@ -42,7 +42,7 @@
 			<li><div class="name">Magdalena Stehr</div><div class="function">Businesswoman</div></li>
 		</ul>
 	<div>
-	
+
 	<script>
 		$("ul#predefined li").click(function(){
 		cur_name=$(this).children('.name').text();
@@ -54,16 +54,16 @@
 		function function_send() {
 			name_to_send = $("#lower-thirds-name:text").val();
 			function_to_send = $("#lower-thirds-function:text").val();
-			
+
 			if (document.getElementById("position-left").checked == true) {position = "left"};
 			if (document.getElementById("position-right").checked == true) {position = "right"};
-			
+
 			bc.postMessage(name_to_send + '|' + function_to_send + '|' + position + '|' + 'animateIn'); /* send */
 		};
 		function function_hide() {
 			bc.postMessage('|||animateOut'); /* send - only last parameter*/
 		}
 	</script>
-	
+
   </body>
 </html>
